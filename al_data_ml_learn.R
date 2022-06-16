@@ -23,6 +23,9 @@ ml_ad <- initial_split(ad_data, prop = 3/4)
 trainset <- training(ml_ad)
 testset <- testing(ml_ad)
 
+# TODO Try different splitting techniques
+
+
 # Now we will train linear regression model on the trainset
 # We will predict Ab_42 levels based the information available
 model1 <- lm(Ab_42 ~ Apolipoprotein_E, data = trainset)
